@@ -2,4 +2,6 @@
 
     <string name="app_name">Kiki</string>
 
+    <string name="accounts_text">Accounts</string>
+
 </resources>
