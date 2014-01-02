@@ -2,5 +2,6 @@
 
     <string name="app_name">Kiki</string>
     <string name="accounts_text">Accounts</string>
+    <string name="facebook_app_id">379936908810295</string>
 
 </resources>
