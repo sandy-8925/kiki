@@ -21,6 +21,7 @@
             </intent-filter>
         </activity>
         <activity android:name="org.sanpra.kiki.activity.AccountsActivity" />
+        <meta-data android:value="@string/facebook_app_id" android:name="com.facebook.sdk.ApplicationId"/>
 
     </application>
 
