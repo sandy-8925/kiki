@@ -1,4 +1,4 @@
-package org.sanpra.kiki.componentUtils;
+package org.sanpra.kiki.utils;
 
 import android.app.Activity;
 import android.content.Intent;
