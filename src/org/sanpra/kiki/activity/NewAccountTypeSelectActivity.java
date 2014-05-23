@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 
-public class NewAccountTypeSelectActivity extends ListActivity {
+public final class NewAccountTypeSelectActivity extends ListActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
