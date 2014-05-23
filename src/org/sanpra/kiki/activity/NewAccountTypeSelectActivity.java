@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 
+/**
+ * Shows list of account types. User selects one of the account types to create a new account of that type.
+ */
 public final class NewAccountTypeSelectActivity extends ListActivity {
 
 	@Override
