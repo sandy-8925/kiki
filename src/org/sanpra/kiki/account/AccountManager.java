@@ -20,4 +20,8 @@ public final class AccountManager {
     public static List<Account> getAccountList() {
         return null;
     }
+
+    public static List<AccountType> getAccountTypeList() {
+        return null;
+    }
 }
