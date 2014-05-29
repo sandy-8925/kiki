@@ -21,7 +21,7 @@ public final class NewAccountTypeSelectActivity extends ListActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
         List<AccountType> accountList =  AccountManager.getAccountTypeList();
-        //TODO:use cursor to display account list
+        //TODO:use cursor/adapter to display account list
 		ListAdapter accountTypeListAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, AccountManager.availableAccountTypes);
 		setListAdapter(accountTypeListAdapter);
 	}
