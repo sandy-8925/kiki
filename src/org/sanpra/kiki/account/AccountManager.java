@@ -17,10 +17,6 @@ public final class AccountManager {
         return null;
     }
 
-    public static List<Account> getAccountList() {
-        return null;
-    }
-
     public static List<AccountType> getAccountTypeList() {
         return null;
     }
