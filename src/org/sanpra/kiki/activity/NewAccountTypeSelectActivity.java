@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-import org.sanpra.kiki.account.Account;
 import org.sanpra.kiki.account.AccountManager;
 import org.sanpra.kiki.account.AccountType;
 
