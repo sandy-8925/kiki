@@ -1,7 +1,7 @@
 package org.sanpra.kiki.account;
 
 /**
- * Created by sandeep on 23/05/14.
+ * Should be an abstract class, not an interface
  */
 public abstract class AccountType {
     //TODO:logo
