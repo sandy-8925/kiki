@@ -7,7 +7,7 @@ public abstract class AccountType {
     //TODO:logo
 
     //service name
-    private String serviceName;
+    protected String serviceName;
 
     public void createAccount() {
 
