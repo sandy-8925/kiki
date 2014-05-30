@@ -12,4 +12,8 @@ public abstract class AccountType {
     public void createAccount() {
 
     }
+
+    public String getServiceName() {
+        return serviceName;
+    }
 }
