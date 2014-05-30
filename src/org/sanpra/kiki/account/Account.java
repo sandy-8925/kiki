@@ -1,7 +1,7 @@
 package org.sanpra.kiki.account;
 
 /**
- * Created by sandeep on 23/05/14.
+ * Represents service account (Facebook, Google+, Flickr etc.) of any type
  */
 abstract class Account {
     private AccountType accountType;
