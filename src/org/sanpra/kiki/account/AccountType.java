@@ -1,19 +1,11 @@
 package org.sanpra.kiki.account;
 
 /**
- * Should be an abstract class, not an interface
+ * Represents an account type (e.g) Facebook account, Google account etc.
+ * Each AccountType implementation must have a logo, service name
  */
-public abstract class AccountType {
+public interface AccountType {
+    public Account createAccount();
+    public String getServiceName();
     //TODO:logo
-
-    //service name
-    protected String serviceName;
-
-    public void createAccount() {
-
-    }
-
-    public String getServiceName() {
-        return serviceName;
-    }
 }
