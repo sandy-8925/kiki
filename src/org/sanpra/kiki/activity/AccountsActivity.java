@@ -6,7 +6,7 @@ import org.sanpra.kiki.utils.StartActivityOnClickListener;
 import android.app.Activity;
 import android.os.Bundle;
 
-public class AccountsActivity extends Activity {
+public final class AccountsActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
