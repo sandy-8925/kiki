@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-public class StartActivityOnClickListener implements OnClickListener {
+public final class StartActivityOnClickListener implements OnClickListener {
 
 	Class<? extends Activity> activityClass;
 	Intent startActivityIntent;
