@@ -3,7 +3,8 @@ package org.sanpra.kiki.account;
 import java.util.List;
 
 /**
- * Created by sandeep on 23/05/14.
+ * Manages accounts for different services.
+ * Handles account creation, persistence, deletion.
  */
 public final class AccountManager {
 
