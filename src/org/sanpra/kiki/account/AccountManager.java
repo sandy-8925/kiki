@@ -2,7 +2,9 @@ package org.sanpra.kiki.account;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Manages accounts for different services.
@@ -12,7 +14,7 @@ public final class AccountManager {
     //TODO: needs to be persisted somewhere
     private static List<Account> accountList;
 
-    private static List<AccountType> availableAccountTypes = new ArrayList<AccountType>();
+    private static Set<AccountType> availableAccountTypes = new HashSet<AccountType>();
 
     static {
         availableAccountTypes.add(FacebookAccountType.getInstance());
