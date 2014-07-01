@@ -22,10 +22,6 @@ public final class AccountManager {
         return instance;
     }
 
-    public static List<AccountType> getAccountTypeList() {
-        return null;
-    }
-
     public static List<AccountType> getAvailableAccountTypes() {
         //TODO: maybe return only copy of availableAccountTypes? Might not be possible since AccountType implementations must be singletons. Or make it unmodifiable (no adding or removing entries)
         return availableAccountTypes;
