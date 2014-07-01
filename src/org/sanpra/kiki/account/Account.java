@@ -6,6 +6,10 @@ package org.sanpra.kiki.account;
 abstract class Account {
     private AccountType accountType;
 
+    protected Account(AccountType accountType) {
+        this.accountType = accountType;
+    }
+
     public AccountType getAccountType() {
         return accountType;
     }
