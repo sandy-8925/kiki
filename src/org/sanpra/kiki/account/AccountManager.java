@@ -1,5 +1,6 @@
 package org.sanpra.kiki.account;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -9,8 +10,12 @@ import java.util.List;
 public final class AccountManager {
     //TODO: needs to be persisted somewhere
     private static List<Account> accountList;
-    //TODO: needs to be initialized somewhere
-    private static List<AccountType> availableAccountTypes;
+
+    private static List<AccountType> availableAccountTypes = new ArrayList<AccountType>();
+
+    static {
+        availableAccountTypes.add(FacebookAccountType.getInstance());
+    }
 
     private static AccountManager instance;
 
