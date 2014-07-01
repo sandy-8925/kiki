@@ -7,10 +7,6 @@ import java.util.List;
  * Handles account creation, persistence, deletion.
  */
 public final class AccountManager {
-
-    public static String[] availableAccountTypes = {
-        "Facebook"
-    };
     //TODO: needs to be persisted somewhere
     private static List<Account> accountList;
 
