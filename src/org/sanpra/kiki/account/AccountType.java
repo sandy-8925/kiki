@@ -12,5 +12,5 @@ import android.app.Activity;
 public interface AccountType {
     public Account createAccount(Activity activity);
     public String getServiceName();
-    //TODO:logo
+    //TODO: method for retrieving logo
 }
