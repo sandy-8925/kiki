@@ -1,6 +1,7 @@
 package org.sanpra.kiki.account;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -27,7 +28,7 @@ public final class AccountManager {
         return instance;
     }
 
-    public static List<AccountType> getAvailableAccountTypes() {
+    public static Collection<AccountType> getAvailableAccountTypes() {
         //TODO: maybe return only copy of availableAccountTypes? Might not be possible since AccountType implementations must be singletons. Or make it unmodifiable (no adding or removing entries)
         return availableAccountTypes;
     }
