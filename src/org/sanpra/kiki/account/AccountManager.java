@@ -2,6 +2,7 @@ package org.sanpra.kiki.account;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -31,7 +32,6 @@ public final class AccountManager {
     }
 
     public static Collection<AccountType> getAvailableAccountTypes() {
-        //TODO: maybe return only copy of availableAccountTypes? Might not be possible since AccountType implementations must be singletons. Or make it unmodifiable (no adding or removing entries)
-        return availableAccountTypes;
+        return Collections.unmodifiableSet(availableAccountTypes);
     }
 }
