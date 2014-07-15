@@ -24,7 +24,9 @@ public final class AccountManager {
 
     private static AccountManager instance;
 
-    private AccountManager() {}
+    private AccountManager() {
+        accountList = new ArrayList<Account>();
+    }
 
     public static AccountManager getInstance() {
         if(instance == null)
