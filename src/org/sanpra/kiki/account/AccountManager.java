@@ -1,5 +1,7 @@
 package org.sanpra.kiki.account;
 
+import android.app.Activity;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -36,5 +38,9 @@ public final class AccountManager {
 
     public static Collection<AccountType> getAvailableAccountTypes() {
         return Collections.unmodifiableSet(availableAccountTypes);
+    }
+
+    public static void createAccount(AccountType selectedAccountType, Activity activity) {
+        accountList.add(selectedAccountType.createAccount(activity));
     }
 }
