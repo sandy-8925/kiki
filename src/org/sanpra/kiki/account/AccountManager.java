@@ -24,15 +24,7 @@ public final class AccountManager {
         availableAccountTypes.add(FacebookAccountType.getInstance());
     }
 
-    private static AccountManager instance;
-
     private AccountManager() {
-    }
-
-    public static AccountManager getInstance() {
-        if(instance == null)
-            instance = new AccountManager();
-        return instance;
     }
 
     public static Collection<AccountType> getAvailableAccountTypes() {
