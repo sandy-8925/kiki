@@ -15,7 +15,7 @@ import java.util.Set;
  */
 public final class AccountManager {
     //TODO: needs to be persisted somewhere
-    private static List<Account> accountList = new ArrayList<Account>();
+    private final static List<Account> accountList = new ArrayList<Account>();
 
     private static Set<AccountType> availableAccountTypes = new HashSet<AccountType>();
 
