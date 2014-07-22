@@ -17,7 +17,7 @@ public final class AccountManager {
     //TODO: needs to be persisted somewhere
     private final static List<Account> accountList = new ArrayList<Account>();
 
-    private static Set<AccountType> availableAccountTypes = new HashSet<AccountType>();
+    private final static Set<AccountType> availableAccountTypes = new HashSet<AccountType>();
 
     //TODO: find better way of initializing list of account types
     static {
