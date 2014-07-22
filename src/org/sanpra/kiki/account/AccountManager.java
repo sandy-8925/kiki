@@ -19,7 +19,7 @@ public final class AccountManager {
 
     private final static Set<AccountType> availableAccountTypes = new HashSet<AccountType>();
 
-    //TODO: find better way of initializing list of account types
+    //TODO: Find better way of initializing list of account types. This data needs to be persisted somewhere.
     static {
         availableAccountTypes.add(FacebookAccountType.getInstance());
     }
