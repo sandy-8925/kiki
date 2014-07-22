@@ -16,6 +16,7 @@ public final class NewAccountTypeSelectActivity extends ListActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+        //TODO: Create this object once during application startup, and reuse it each time for this activity
 		ListAdapter accountTypeListAdapter = new AccountTypeListAdapter(AccountManager.getAvailableAccountTypes());
 		setListAdapter(accountTypeListAdapter);
 	}
