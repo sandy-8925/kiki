@@ -8,17 +8,14 @@ import android.widget.ListAdapter;
 import android.widget.TextView;
 import org.sanpra.kiki.account.Account;
 
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 final class AccountListAdapter implements ListAdapter {
 
     private List<Account> accountList;
 
-    AccountListAdapter(Collection<Account> accountList) {
-        this.accountList = new ArrayList<Account>();
-        this.accountList.addAll(accountList);
+    AccountListAdapter(List<Account> accountList) {
+        this.accountList = accountList;
     }
 
     @Override
