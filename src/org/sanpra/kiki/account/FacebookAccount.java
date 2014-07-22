@@ -12,4 +12,9 @@ final class FacebookAccount extends Account {
         super(FacebookAccountType.getInstance());
         this.fbSession = session;
     }
+
+    @Override
+    public String getDisplayName() {
+        return "Test display name";
+    }
 }

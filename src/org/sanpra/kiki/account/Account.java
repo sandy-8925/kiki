@@ -13,4 +13,11 @@ abstract public class Account {
     public AccountType getAccountType() {
         return accountType;
     }
+
+    /**
+     * Returns a representative name for this account, to be shown to the user.
+     * It is meant to help the user uniquely identify the account.
+     * @return A display name for this account
+     */
+    public abstract String getDisplayName();
 }
