@@ -27,6 +27,10 @@ public final class AccountManager {
     private AccountManager() {
     }
 
+    public static Collection<Account> getAccountList() {
+        return Collections.unmodifiableList(accountList);
+    }
+
     public static Collection<AccountType> getAvailableAccountTypes() {
         return Collections.unmodifiableSet(availableAccountTypes);
     }
