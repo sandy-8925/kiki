@@ -16,7 +16,7 @@ public final class AccountsActivity extends Activity {
         setContentView(R.layout.account_list_layout);
         findViewById(R.id.addAccountButton).setOnClickListener(new StartActivityOnClickListener(NewAccountTypeSelectActivity.class));
 
-        //TODO: Need to dynamically refresh this data when new accounts are created
+        //TODO: Need to dynamically refresh this view when new accounts are created
         final AccountListAdapter accountListAdapter = new AccountListAdapter(AccountManager.getAccountList());
         ((ListView) findViewById(R.id.accounts_list)).setAdapter(accountListAdapter);
     }
