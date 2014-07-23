@@ -9,6 +9,8 @@ import org.sanpra.kiki.utils.StartActivityOnClickListener;
 
 public final class AccountsActivity extends Activity {
 
+    private final ListView accountListView = ((ListView) findViewById(R.id.accounts_list));
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,7 +20,7 @@ public final class AccountsActivity extends Activity {
 
         //TODO: Need to dynamically refresh this view when new accounts are created
         final AccountListAdapter accountListAdapter = new AccountListAdapter(AccountManager.getAccountList());
-        ((ListView) findViewById(R.id.accounts_list)).setAdapter(accountListAdapter);
+        accountListView.setAdapter(accountListAdapter);
     }
 
 }
