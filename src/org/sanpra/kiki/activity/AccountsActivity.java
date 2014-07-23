@@ -24,4 +24,10 @@ public final class AccountsActivity extends Activity {
         accountListView.setAdapter(accountListAdapter);
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        accountListView.invalidate();
+    }
 }
