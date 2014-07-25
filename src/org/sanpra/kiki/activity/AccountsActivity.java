@@ -9,13 +9,14 @@ import org.sanpra.kiki.utils.StartActivityOnClickListener;
 
 public final class AccountsActivity extends Activity {
 
-    private final ListView accountListView = ((ListView) findViewById(R.id.accounts_list));
+    private ListView accountListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.account_list_layout);
+        accountListView = ((ListView) findViewById(R.id.accounts_list));
         findViewById(R.id.addAccountButton).setOnClickListener(new StartActivityOnClickListener(NewAccountTypeSelectActivity.class));
 
         //TODO: Need to dynamically refresh this view when new accounts are created
