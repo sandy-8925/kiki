@@ -4,13 +4,13 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListAdapter;
+import android.widget.BaseAdapter;
 import android.widget.TextView;
 import org.sanpra.kiki.account.Account;
 
 import java.util.List;
 
-final class AccountListAdapter implements ListAdapter {
+final class AccountListAdapter extends BaseAdapter {
 
     private List<Account> accountList;
 
@@ -26,16 +26,6 @@ final class AccountListAdapter implements ListAdapter {
     @Override
     public boolean isEnabled(int position) {
         return true;
-    }
-
-    @Override
-    public void registerDataSetObserver(android.database.DataSetObserver observer) {
-
-    }
-
-    @Override
-    public void unregisterDataSetObserver(android.database.DataSetObserver observer) {
-
     }
 
     @Override
