@@ -16,6 +16,7 @@ final class FacebookAccount extends Account {
 
     @Override
     public String getDisplayName() {
+        //TODO: Return suitable display name
         return "Test display name";
     }
 }
