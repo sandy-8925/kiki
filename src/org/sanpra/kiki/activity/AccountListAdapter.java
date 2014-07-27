@@ -10,6 +10,7 @@ import org.sanpra.kiki.account.Account;
 
 import java.util.List;
 
+//TODO: Might be possible to create common abstract base class for AccountListAdapter and AccountTypeListAdapter - reduce code duplication
 final class AccountListAdapter extends BaseAdapter {
 
     private List<Account> accountList;
