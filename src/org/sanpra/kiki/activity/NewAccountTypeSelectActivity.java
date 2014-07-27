@@ -13,12 +13,12 @@ import org.sanpra.kiki.account.AccountType;
  */
 public final class NewAccountTypeSelectActivity extends ListActivity {
 
-	@Override
+    private static final ListAdapter ACCOUNT_TYPE_LIST_ADAPTER = new AccountTypeListAdapter(AccountManager.getAvailableAccountTypes());
+
+    @Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-        //TODO: Create this object once during application startup, and reuse it each time for this activity
-		ListAdapter accountTypeListAdapter = new AccountTypeListAdapter(AccountManager.getAvailableAccountTypes());
-		setListAdapter(accountTypeListAdapter);
+        setListAdapter(ACCOUNT_TYPE_LIST_ADAPTER);
 	}
 
     @Override
