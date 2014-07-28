@@ -20,7 +20,6 @@ public final class AccountsActivity extends Activity {
         accountListView = ((ListView) findViewById(R.id.accounts_list));
         findViewById(R.id.addAccountButton).setOnClickListener(new StartActivityOnClickListener(NewAccountTypeSelectActivity.class));
 
-        //TODO: Need to dynamically refresh this view when new accounts are created
         accountListAdapter = new AccountListAdapter(org.sanpra.kiki.account.AccountManager.getAccountList());
         accountListView.setAdapter(accountListAdapter);
     }
