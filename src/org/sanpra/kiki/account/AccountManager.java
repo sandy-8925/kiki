@@ -36,6 +36,6 @@ public final class AccountManager {
     }
 
     public static void createAccount(AccountType selectedAccountType, Activity activity) {
-        accountList.add(selectedAccountType.createAccount(activity));
+        selectedAccountType.createAccount(activity);
     }
 }

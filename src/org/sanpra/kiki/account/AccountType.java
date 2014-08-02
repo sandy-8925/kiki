@@ -10,7 +10,7 @@ import android.app.Activity;
  * Make all implementations singletons - only one instance is required
  */
 public interface AccountType {
-    public Account createAccount(Activity activity);
+    public void createAccount(Activity activity);
     public String getServiceName();
     //TODO: method for retrieving logo
 }

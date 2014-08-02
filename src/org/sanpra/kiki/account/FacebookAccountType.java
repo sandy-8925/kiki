@@ -25,9 +25,8 @@ final class FacebookAccountType implements AccountType {
     }
 
     @Override
-    public Account createAccount(android.app.Activity activity) {
+    public void createAccount(android.app.Activity activity) {
         Session newFacebookSession = Session.openActiveSession(activity, true, null);
         FacebookAccount newFacebookAccount = new FacebookAccount(newFacebookSession);
-        return newFacebookAccount;
     }
 }
