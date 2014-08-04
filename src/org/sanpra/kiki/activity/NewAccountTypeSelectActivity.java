@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import com.facebook.Session;
 import org.sanpra.kiki.account.AccountManager;
 import org.sanpra.kiki.account.AccountType;
 
@@ -27,5 +28,11 @@ public final class NewAccountTypeSelectActivity extends ListActivity {
         AccountType selectedAccountType = (AccountType) getListView().getItemAtPosition(position);
         AccountManager.createAccount(selectedAccountType, this);
         finish();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, android.content.Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        Session.getActiveSession().onActivityResult(this, requestCode, resultCode, data);
     }
 }

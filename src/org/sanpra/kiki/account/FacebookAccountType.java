@@ -26,7 +26,18 @@ final class FacebookAccountType implements AccountType {
 
     @Override
     public void createAccount(android.app.Activity activity) {
-        Session newFacebookSession = Session.openActiveSession(activity, true, null);
-        FacebookAccount newFacebookAccount = new FacebookAccount(newFacebookSession);
+        Session.openActiveSession(activity, true, new Session.StatusCallback() {
+
+            @Override
+            public void call(Session session, SessionState state, Exception exception) {
+                //TODO: Handle session opening failure - display error message to user (Toast?)
+                if(session.isOpened()) {
+                    FacebookAccount newFacebookAccount = new FacebookAccount(session);
+                    AccountManager.addAccount(newFacebookAccount);
+
+                    //TODO: Use different callback for created session - this callback class is only meant to handle account creation
+                }
+            }
+        });
     }
 }

@@ -38,4 +38,8 @@ public final class AccountManager {
     public static void createAccount(AccountType selectedAccountType, Activity activity) {
         selectedAccountType.createAccount(activity);
     }
+
+    static void addAccount(FacebookAccount newFacebookAccount) {
+        accountList.add(newFacebookAccount);
+    }
 }
